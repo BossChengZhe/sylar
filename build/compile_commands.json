@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/cheng/Code/sylar/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9 -Dsylar_EXPORTS -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -g -fPIC -o CMakeFiles/sylar.dir/sylar/log.cc.o -c /home/cheng/Code/sylar/sylar/log.cc",
+  "file": "/home/cheng/Code/sylar/sylar/log.cc"
+},
+{
+  "directory": "/home/cheng/Code/sylar/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9 -Dsylar_EXPORTS -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -g -fPIC -o CMakeFiles/sylar.dir/sylar/util.cc.o -c /home/cheng/Code/sylar/sylar/util.cc",
+  "file": "/home/cheng/Code/sylar/sylar/util.cc"
+},
+{
+  "directory": "/home/cheng/Code/sylar/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9 -Dsylar_EXPORTS -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -g -fPIC -o CMakeFiles/sylar.dir/sylar/config.cc.o -c /home/cheng/Code/sylar/sylar/config.cc",
+  "file": "/home/cheng/Code/sylar/sylar/config.cc"
+},
+{
+  "directory": "/home/cheng/Code/sylar/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -g -o CMakeFiles/test_config.dir/tests/test_config.cc.o -c /home/cheng/Code/sylar/tests/test_config.cc",
+  "file": "/home/cheng/Code/sylar/tests/test_config.cc"
+},
+{
+  "directory": "/home/cheng/Code/sylar/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -g -o CMakeFiles/test.dir/tests/test.cc.o -c /home/cheng/Code/sylar/tests/test.cc",
+  "file": "/home/cheng/Code/sylar/tests/test.cc"
+}
+]

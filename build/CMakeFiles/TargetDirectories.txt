@@ -1,0 +1,5 @@
+/home/cheng/Code/sylar/build/CMakeFiles/rebuild_cache.dir
+/home/cheng/Code/sylar/build/CMakeFiles/test_config.dir
+/home/cheng/Code/sylar/build/CMakeFiles/edit_cache.dir
+/home/cheng/Code/sylar/build/CMakeFiles/test.dir
+/home/cheng/Code/sylar/build/CMakeFiles/sylar.dir
