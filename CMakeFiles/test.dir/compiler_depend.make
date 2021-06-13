@@ -223,6 +223,10 @@ CMakeFiles/test.dir/tests/test.cc.o: tests/test.cc \
   /usr/include/c++/9/bits/stl_map.h \
   /usr/include/c++/9/bits/stl_multimap.h \
   /usr/include/c++/9/bits/erase_if.h \
+  sylar/thread.h \
+  /usr/include/semaphore.h \
+  /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+  /usr/include/c++/9/atomic \
   sylar/util.h \
   /usr/include/x86_64-linux-gnu/sys/syscall.h \
   /usr/include/x86_64-linux-gnu/asm/unistd.h \
@@ -234,7 +238,8 @@ CMakeFiles/test.dir/tests/test.cc.o: tests/test.cc \
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
-  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  sylar/util.h
 
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
@@ -247,7 +252,11 @@ CMakeFiles/test.dir/tests/test.cc.o: tests/test.cc \
 
 sylar/util.h:
 
+/usr/include/semaphore.h:
+
 /usr/include/c++/9/map:
+
+/usr/include/x86_64-linux-gnu/bits/semaphore.h:
 
 sylar/singleton.h:
 
@@ -354,6 +363,8 @@ sylar/log.h:
 /usr/include/x86_64-linux-gnu/sys/syscall.h:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
+
+sylar/thread.h:
 
 /usr/include/c++/9/fstream:
 
@@ -574,6 +585,8 @@ tests/test.cc:
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h:
+
+/usr/include/c++/9/atomic:
 
 /usr/include/c++/9/bits/move.h:
 

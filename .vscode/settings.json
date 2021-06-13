@@ -67,5 +67,5 @@
         "/usr/include"
     ],
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
-    "editor.fontSize": 24
+    "editor.fontSize": 18
 }

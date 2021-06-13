@@ -168,7 +168,10 @@ CMakeFiles/test.dir/tests/test.cc.o: /home/cheng/Code/sylar/tests/test.cc \
  /home/cheng/Code/sylar/./sylar/singleton.h /usr/include/c++/9/map \
  /usr/include/c++/9/bits/stl_tree.h /usr/include/c++/9/bits/stl_map.h \
  /usr/include/c++/9/bits/stl_multimap.h \
- /usr/include/c++/9/bits/erase_if.h /home/cheng/Code/sylar/./sylar/util.h \
+ /usr/include/c++/9/bits/erase_if.h \
+ /home/cheng/Code/sylar/./sylar/thread.h /usr/include/semaphore.h \
+ /usr/include/x86_64-linux-gnu/bits/semaphore.h /usr/include/c++/9/atomic \
+ /home/cheng/Code/sylar/./sylar/util.h \
  /usr/include/x86_64-linux-gnu/sys/syscall.h \
  /usr/include/x86_64-linux-gnu/asm/unistd.h \
  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
@@ -178,4 +181,5 @@ CMakeFiles/test.dir/tests/test.cc.o: /home/cheng/Code/sylar/tests/test.cc \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd_ext.h
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /home/cheng/Code/sylar/./sylar/util.h

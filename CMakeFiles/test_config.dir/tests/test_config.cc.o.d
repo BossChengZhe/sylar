@@ -170,7 +170,10 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: \
  /home/cheng/Code/sylar/./sylar/singleton.h /usr/include/c++/9/map \
  /usr/include/c++/9/bits/stl_tree.h /usr/include/c++/9/bits/stl_map.h \
  /usr/include/c++/9/bits/stl_multimap.h \
- /usr/include/c++/9/bits/erase_if.h /home/cheng/Code/sylar/./sylar/util.h \
+ /usr/include/c++/9/bits/erase_if.h \
+ /home/cheng/Code/sylar/./sylar/thread.h /usr/include/semaphore.h \
+ /usr/include/x86_64-linux-gnu/bits/semaphore.h /usr/include/c++/9/atomic \
+ /home/cheng/Code/sylar/./sylar/util.h \
  /usr/include/x86_64-linux-gnu/sys/syscall.h \
  /usr/include/x86_64-linux-gnu/asm/unistd.h \
  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
@@ -616,8 +619,9 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: \
  /usr/local/include/boost/integer.hpp \
  /usr/local/include/boost/integer_fwd.hpp \
  /usr/local/include/boost/detail/basic_pointerbuf.hpp \
- /usr/local/include/yaml-cpp/yaml.h /usr/local/include/yaml-cpp/parser.h \
- /usr/local/include/yaml-cpp/dll.h /usr/local/include/yaml-cpp/emitter.h \
+ /home/cheng/Code/sylar/./sylar/log.h /usr/local/include/yaml-cpp/yaml.h \
+ /usr/local/include/yaml-cpp/parser.h /usr/local/include/yaml-cpp/dll.h \
+ /usr/local/include/yaml-cpp/emitter.h \
  /usr/local/include/yaml-cpp/binary.h \
  /usr/local/include/yaml-cpp/emitterdef.h \
  /usr/local/include/yaml-cpp/emittermanip.h \
@@ -642,7 +646,7 @@ CMakeFiles/test_config.dir/tests/test_config.cc.o: \
  /usr/local/include/yaml-cpp/node/detail/node_iterator.h \
  /usr/local/include/yaml-cpp/node/iterator.h \
  /usr/local/include/yaml-cpp/node/detail/iterator.h \
- /usr/include/c++/9/atomic /usr/local/include/yaml-cpp/node/convert.h \
+ /usr/local/include/yaml-cpp/node/convert.h \
  /usr/local/include/yaml-cpp/node/detail/impl.h \
  /usr/local/include/yaml-cpp/node/parse.h \
  /usr/local/include/yaml-cpp/node/emit.h /usr/include/c++/9/unordered_map \

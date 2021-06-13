@@ -596,7 +596,7 @@ CMakeFiles/sylar.dir/sylar/config.cc.o: \
  /usr/local/include/boost/integer.hpp \
  /usr/local/include/boost/integer_fwd.hpp \
  /usr/local/include/boost/detail/basic_pointerbuf.hpp \
- /home/cheng/Code/sylar/./sylar/log.h /usr/include/c++/9/list \
+ /home/cheng/Code/sylar/sylar/log.h /usr/include/c++/9/list \
  /usr/include/c++/9/bits/stl_list.h /usr/include/c++/9/bits/list.tcc \
  /usr/include/c++/9/fstream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
@@ -606,10 +606,12 @@ CMakeFiles/sylar.dir/sylar/config.cc.o: \
  /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
  /usr/include/c++/9/thread /usr/include/c++/9/chrono \
  /usr/include/c++/9/ratio /usr/include/c++/9/bits/parse_numbers.h \
- /home/cheng/Code/sylar/./sylar/singleton.h /usr/include/c++/9/map \
+ /home/cheng/Code/sylar/sylar/singleton.h /usr/include/c++/9/map \
  /usr/include/c++/9/bits/stl_tree.h /usr/include/c++/9/bits/stl_map.h \
  /usr/include/c++/9/bits/stl_multimap.h \
- /usr/include/c++/9/bits/erase_if.h /home/cheng/Code/sylar/./sylar/util.h \
+ /usr/include/c++/9/bits/erase_if.h /home/cheng/Code/sylar/sylar/thread.h \
+ /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /usr/include/c++/9/atomic /home/cheng/Code/sylar/sylar/util.h \
  /usr/include/x86_64-linux-gnu/sys/syscall.h \
  /usr/include/x86_64-linux-gnu/asm/unistd.h \
  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
@@ -640,7 +642,7 @@ CMakeFiles/sylar.dir/sylar/config.cc.o: \
  /usr/local/include/yaml-cpp/node/detail/node_iterator.h \
  /usr/local/include/yaml-cpp/node/iterator.h \
  /usr/local/include/yaml-cpp/node/detail/iterator.h \
- /usr/include/c++/9/atomic /usr/local/include/yaml-cpp/node/convert.h \
+ /usr/local/include/yaml-cpp/node/convert.h \
  /usr/local/include/yaml-cpp/node/detail/impl.h \
  /usr/local/include/yaml-cpp/node/parse.h \
  /usr/local/include/yaml-cpp/node/emit.h /usr/include/c++/9/unordered_map \
