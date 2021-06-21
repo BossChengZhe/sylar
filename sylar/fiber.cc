@@ -3,6 +3,7 @@
 #include "macro.h"
 #include "config.h"
 #include "log.h" 
+#include "scheduler.h"
 
 
 namespace sylar {
@@ -46,7 +47,7 @@ Fiber::Fiber () {
     SYLAR_LOG_DEBUG(g_logger) << "Fiber::Fiber";
 }
 
-Fiber::Fiber(std::function<void()> cb, size_t stacksize) : m_id(++s_fiber_id), m_cb(cb) {
+Fiber::Fiber(std::function<void()> cb, size_t stacksize, bool use_caller) : m_id(++s_fiber_id), m_cb(cb) {
     ++s_fiber_count;
     m_stacksize = stacksize ? stacksize : g_fiber_stack_size->getValue();
 
@@ -57,8 +58,16 @@ Fiber::Fiber(std::function<void()> cb, size_t stacksize) : m_id(++s_fiber_id), m
     m_ctx.uc_link = nullptr;
     m_ctx.uc_stack.ss_sp = m_stack;
     m_ctx.uc_stack.ss_size = m_stacksize;
+
     // 将一个新函数和堆栈，绑定到指定context中
-    makecontext(&m_ctx, &Fiber::MainFunc, 0);
+    if(!use_caller) {
+        makecontext(&m_ctx, &Fiber::MainFunc, 0);
+    }
+    else {
+        makecontext(&m_ctx, &Fiber::CallerMainFunc, 0);
+
+    }
+
     SYLAR_LOG_DEBUG(g_logger) << "Fiber::Fiber id=" << m_id;
 }
 
@@ -102,15 +111,41 @@ void Fiber::swapIn(){
     SYLAR_ASSERT(m_state != EXEC);
     m_state = EXEC;
 
-    if(swapcontext(&t_threadFiber->m_ctx, &m_ctx)) {
+    if(swapcontext(&Scheduler::GetMainFiber()->m_ctx, &m_ctx)) {
         SYLAR_ASSERT2(false, "swapcontext");
     }
 }
 
 void Fiber::swapOut(){
-    SetThis(t_threadFiber.get());
+    
+    SetThis(Scheduler::GetMainFiber());
+    if(swapcontext( &m_ctx, &Scheduler::GetMainFiber()->m_ctx)) {
+        SYLAR_ASSERT2(false, "swapcontext");
+    }
+    
+    // 如果不等于调度协程，直接与调度协程切换；否则与线程主协程交换
+    // if(t_fiber != Scheduler::GetMainFiber()) {
+    // } 
+    // else {
+    //     SetThis(t_threadFiber.get());
+    //     if (swapcontext(&m_ctx, &t_threadFiber->m_ctx))
+    //     {
+    //         SYLAR_ASSERT2(false, "swapcontext");
+    //     }
+    // }
+}
 
-    if(swapcontext( &m_ctx, &t_threadFiber->m_ctx)) {
+void Fiber::call() {
+    SetThis(this);
+    m_state = EXEC;
+    if(swapcontext(&t_threadFiber->m_ctx, &m_ctx)) {
+        SYLAR_ASSERT2(false, "swapcontext");
+    }
+}
+
+void Fiber::back() {
+    SetThis(t_threadFiber.get());
+    if(swapcontext(&m_ctx, &t_threadFiber->m_ctx)) {
         SYLAR_ASSERT2(false, "swapcontext");
     }
 }
@@ -166,11 +201,36 @@ void Fiber::MainFunc(){
     auto raw_cur = cur.get();
     cur.reset();
     raw_cur->swapOut();
+    SYLAR_ASSERT2(false, "never reach!");
 }
+
 uint64_t Fiber::GetFiberId() {
     if(t_fiber) {
         return t_fiber->getId();
     }
     return 0;
+}
+
+void Fiber::CallerMainFunc() {
+    Fiber::ptr cur = GetThis();
+    SYLAR_ASSERT(cur);
+    try{
+        cur->m_cb();
+        cur->m_cb = nullptr;
+        cur->m_state = TERM;
+    }
+    catch(const std::exception& ex) {
+        cur->m_state = EXCEPT;
+        SYLAR_LOG_ERROR(g_logger) << "Fiber Except: " << ex.what();
+    }
+    catch(...) {
+        cur->m_state = EXCEPT;
+        SYLAR_LOG_ERROR(g_logger) << "Fiber Except: ";
+    }
+    
+    auto raw_cur = cur.get();
+    cur.reset();
+    raw_cur->back();
+    SYLAR_ASSERT2(false, "never reach!");
 }
 }

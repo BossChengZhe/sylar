@@ -28,6 +28,6 @@ int main(int argc, char const *argv[])
 
     auto l = sylar::LoggerMgr::GetInstance()->getLogger("xx");
     SYLAR_LOG_INFO(l) << "xxx";
-
+    
     return 0;
 }

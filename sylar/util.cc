@@ -7,6 +7,9 @@ namespace sylar{
 
 sylar::Logger::ptr g_logger = SYLAR_LOG_NAME("system");
 
+/*
+ * @brief 返回当前线程的ID
+ */
 pid_t GetThreadId()
 {
     return syscall(SYS_gettid);

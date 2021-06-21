@@ -4,7 +4,7 @@ project(sylar)
 include(cmake/utils.cmake)
 
 set(CMAKE_VERBOSE_MAKEFILE ON)
-set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined")
+set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Wno-unused-function -Wno-builtin-macro-redefined")
 
 include_directories(.)
 include_directories(/usr/local/include)
@@ -19,6 +19,8 @@ set(LIB_SRC
         sylar/config.cc
         sylar/thread.cc
         sylar/fiber.cc
+        sylar/scheduler.cc
+        sylar/mutex.cc
     )
 
 add_library(sylar SHARED ${LIB_SRC})
@@ -55,6 +57,11 @@ add_executable(test_fiber tests/test_fiber.cc)
 add_dependencies(test_fiber sylar)
 force_redefine_file_macro_for_sources(test_fiber)
 target_link_libraries(test_fiber sylar ${LIB_LIB})
+
+add_executable(test_scheduler tests/test_scheduler.cc)
+add_dependencies(test_scheduler sylar)
+force_redefine_file_macro_for_sources(test_scheduler)
+target_link_libraries(test_scheduler sylar ${LIB_LIB})
 
 
 

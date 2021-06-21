@@ -19,7 +19,8 @@
 						2,
 						3,
 						4,
-						5
+						5,
+						6
 					]
 				}
 			],
@@ -39,7 +40,8 @@
 						2,
 						3,
 						4,
-						5
+						5,
+						6
 					]
 				}
 			],
@@ -48,42 +50,49 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "sylar::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-sylar-Debug-19897f7c5d5f15e8c5f3.json",
+					"jsonFile" : "target-sylar-Debug-478a84cdc3a3802739f7.json",
 					"name" : "sylar",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test-Debug-7f6e25620612608f45ee.json",
+					"jsonFile" : "target-test-Debug-21c97ee9e666d9931b93.json",
 					"name" : "test",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test_config::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test_config-Debug-612b41c05a6c1c9374b1.json",
+					"jsonFile" : "target-test_config-Debug-f1e7c88094d3774b376c.json",
 					"name" : "test_config",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test_fiber::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test_fiber-Debug-86bb64d0793d68532b32.json",
+					"jsonFile" : "target-test_fiber-Debug-04e55c0abb451944f482.json",
 					"name" : "test_fiber",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "test_scheduler::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_scheduler-Debug-8e535ced7b6657e998fe.json",
+					"name" : "test_scheduler",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "test_thread::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test_thread-Debug-4f14a76a290e33d1d4b0.json",
+					"jsonFile" : "target-test_thread-Debug-dc29251d1dcab989d47d.json",
 					"name" : "test_thread",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test_util::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test_util-Debug-367dfa58a0fb48e3308f.json",
+					"jsonFile" : "target-test_util-Debug-3c22cd57da6034200675.json",
 					"name" : "test_util",
 					"projectIndex" : 0
 				}

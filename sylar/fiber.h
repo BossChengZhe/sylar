@@ -7,7 +7,11 @@
 #include "thread.h"
 
 namespace sylar {
+
+class Scheduler;
+
 class Fiber : public std::enable_shared_from_this<Fiber> {
+friend class Scheduler;
 public:
     typedef std::shared_ptr<Fiber> ptr;
 
@@ -33,7 +37,13 @@ private:
     Fiber();
 
 public:
-    Fiber(std::function<void()> cb,size_t stacksize = 0);
+    /**
+     * @brief 构造函数
+     * @param[in] cb 协程执行的函数
+     * @param[in] stacksize 协程栈大小
+     * @param[in] use_caller 是否在MainFiber上调度
+     */
+    Fiber(std::function<void()> cb,size_t stacksize = 0, bool use_caller = false);
     ~Fiber();
 
     /**
@@ -59,6 +69,25 @@ public:
      * @brief 将当前协程切换到后台
      */
     void swapOut();
+
+    /**
+     * @brief 返回协程状态
+     */
+    State getState() const { return m_state;}
+
+    /**
+     * @brief 将当前线程切换到执行状态
+     * @pre 执行的为当前线程的主协程
+     */
+    void call();
+
+    /**
+     * @brief 将当前线程切换到后台
+     * @pre 执行的为该协程
+     * @post 返回到线程的主协程
+     */
+    void back();
+
 public:
     /**
      * @brief 设置当前线程的运行协程
@@ -94,6 +123,12 @@ public:
      * @post 执行完成返回到线程主协程
      */
     static void MainFunc();
+
+    /**
+     * @brief 协程执行函数
+     * @post 执行完成返回到线程调度协程
+     */
+    static void CallerMainFunc();
 
     /**
      * @brief 获取当前协程的id

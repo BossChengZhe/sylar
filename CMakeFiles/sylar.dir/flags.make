@@ -6,7 +6,7 @@ CXX_DEFINES = -Dsylar_EXPORTS
 
 CXX_INCLUDES = -I/home/cheng/Code/sylar/.
 
-CXX_FLAGS =  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -fPIC
+CXX_FLAGS =  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Wno-unused-function -Wno-builtin-macro-redefined -fPIC
 
 # Custom defines: CMakeFiles/sylar.dir/sylar/log.cc.o_DEFINES = __FILE__="sylar/log.cc"
 
@@ -17,4 +17,8 @@ CXX_FLAGS =  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-u
 # Custom defines: CMakeFiles/sylar.dir/sylar/thread.cc.o_DEFINES = __FILE__="sylar/thread.cc"
 
 # Custom defines: CMakeFiles/sylar.dir/sylar/fiber.cc.o_DEFINES = __FILE__="sylar/fiber.cc"
+
+# Custom defines: CMakeFiles/sylar.dir/sylar/scheduler.cc.o_DEFINES = __FILE__="sylar/scheduler.cc"
+
+# Custom defines: CMakeFiles/sylar.dir/sylar/mutex.cc.o_DEFINES = __FILE__="sylar/mutex.cc"
 

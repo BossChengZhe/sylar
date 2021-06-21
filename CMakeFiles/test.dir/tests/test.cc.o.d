@@ -171,6 +171,7 @@ CMakeFiles/test.dir/tests/test.cc.o: /home/cheng/Code/sylar/tests/test.cc \
  /usr/include/c++/9/bits/erase_if.h \
  /home/cheng/Code/sylar/./sylar/thread.h /usr/include/semaphore.h \
  /usr/include/x86_64-linux-gnu/bits/semaphore.h /usr/include/c++/9/atomic \
+ /home/cheng/Code/sylar/./sylar/mutex.h \
  /home/cheng/Code/sylar/./sylar/util.h \
  /usr/include/x86_64-linux-gnu/sys/syscall.h \
  /usr/include/x86_64-linux-gnu/asm/unistd.h \

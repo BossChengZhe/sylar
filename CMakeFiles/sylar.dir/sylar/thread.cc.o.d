@@ -144,7 +144,7 @@ CMakeFiles/sylar.dir/sylar/thread.cc.o: \
  /usr/include/c++/9/backward/auto_ptr.h /usr/include/c++/9/functional \
  /usr/include/c++/9/bits/std_function.h /usr/include/semaphore.h \
  /usr/include/x86_64-linux-gnu/bits/semaphore.h /usr/include/c++/9/atomic \
- /home/cheng/Code/sylar/sylar/util.h \
+ /home/cheng/Code/sylar/sylar/mutex.h /home/cheng/Code/sylar/sylar/util.h \
  /usr/include/x86_64-linux-gnu/sys/syscall.h \
  /usr/include/x86_64-linux-gnu/asm/unistd.h \
  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \

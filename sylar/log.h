@@ -26,7 +26,7 @@
     if (logger->getLevel() <= level)                                          \
         sylar::LogEventWrap(sylar::LogEvent::ptr(new sylar::LogEvent(logger,  \
                             level, __FILE__, __LINE__, 0, sylar::GetThreadId(),  \
-                            sylar::GetFiberId(), time(0)))).getSS()
+                            sylar::GetFiberId(), time(0), sylar::Thread::GetName()))).getSS()
 /**
  * @brief 使用流式方式将日志级别debug的日志写入到logger
  */
@@ -55,7 +55,7 @@
     if(logger->getLevel() <= level) \
         sylar::LogEventWrap(sylar::LogEvent::ptr(new sylar::LogEvent(logger, level, \
                         __FILE__, __LINE__, 0, sylar::GetThreadId(),\
-                sylar::GetFiberId(), time(0)))).getEvent()->format(fmt, __VA_ARGS__)
+                sylar::GetFiberId(), time(0), sylar::Thread::GetName()))).getEvent()->format(fmt, __VA_ARGS__)
 /**
  * @brief 使用格式化方式将日志级别debug的日志写入到logger
  */
@@ -124,7 +124,7 @@ public:
      * @param[in] thread_name 线程名称
      */
     LogEvent(std::shared_ptr<Logger> logger, LogLevel::Level level, const char* file, int32_t line, 
-            uint32_t elapse, uint32_t thread_id, uint32_t fiber_id, uint64_t time);
+            uint32_t elapse, uint32_t thread_id, uint32_t fiber_id, uint64_t time, const std::string &thread_name);
 
     const char *getFile() const { return m_file; }
     int32_t getLine() const { return m_line; }
@@ -133,6 +133,7 @@ public:
     uint32_t getFiberId() const { return m_fiberId; }
     uint64_t getTime() const { return m_time; }
     std::stringstream& getSS()  { return m_ss; }
+    const std::string& getThreadName() const { return m_threadName; }
     std::string getContent() const { return m_ss.str(); }
     std::shared_ptr<Logger> getLogger() const { return m_logger; }
     LogLevel::Level getLevel() const { return m_level; }
@@ -151,6 +152,7 @@ private:
 
     std::shared_ptr<Logger> m_logger;     // TODO: 这玩意儿是用来干嘛的？
     LogLevel::Level m_level;
+    std::string m_threadName;
 };
 
 class LogEventWrap {

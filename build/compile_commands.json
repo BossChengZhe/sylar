@@ -1,52 +1,67 @@
 [
 {
   "directory": "/home/cheng/Code/sylar/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9 -Dsylar_EXPORTS -D__FILE__=\\\"sylar/log.cc\\\" -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/log.cc.o -c /home/cheng/Code/sylar/sylar/log.cc",
+  "command": "/bin/x86_64-linux-gnu-g++-9 -Dsylar_EXPORTS -D__FILE__=\\\"sylar/log.cc\\\" -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/log.cc.o -c /home/cheng/Code/sylar/sylar/log.cc",
   "file": "/home/cheng/Code/sylar/sylar/log.cc"
 },
 {
   "directory": "/home/cheng/Code/sylar/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9 -Dsylar_EXPORTS -D__FILE__=\\\"sylar/util.cc\\\" -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/util.cc.o -c /home/cheng/Code/sylar/sylar/util.cc",
+  "command": "/bin/x86_64-linux-gnu-g++-9 -Dsylar_EXPORTS -D__FILE__=\\\"sylar/util.cc\\\" -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/util.cc.o -c /home/cheng/Code/sylar/sylar/util.cc",
   "file": "/home/cheng/Code/sylar/sylar/util.cc"
 },
 {
   "directory": "/home/cheng/Code/sylar/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9 -Dsylar_EXPORTS -D__FILE__=\\\"sylar/config.cc\\\" -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/config.cc.o -c /home/cheng/Code/sylar/sylar/config.cc",
+  "command": "/bin/x86_64-linux-gnu-g++-9 -Dsylar_EXPORTS -D__FILE__=\\\"sylar/config.cc\\\" -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/config.cc.o -c /home/cheng/Code/sylar/sylar/config.cc",
   "file": "/home/cheng/Code/sylar/sylar/config.cc"
 },
 {
   "directory": "/home/cheng/Code/sylar/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9 -Dsylar_EXPORTS -D__FILE__=\\\"sylar/thread.cc\\\" -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/thread.cc.o -c /home/cheng/Code/sylar/sylar/thread.cc",
+  "command": "/bin/x86_64-linux-gnu-g++-9 -Dsylar_EXPORTS -D__FILE__=\\\"sylar/thread.cc\\\" -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/thread.cc.o -c /home/cheng/Code/sylar/sylar/thread.cc",
   "file": "/home/cheng/Code/sylar/sylar/thread.cc"
 },
 {
   "directory": "/home/cheng/Code/sylar/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9 -Dsylar_EXPORTS -D__FILE__=\\\"sylar/fiber.cc\\\" -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/fiber.cc.o -c /home/cheng/Code/sylar/sylar/fiber.cc",
+  "command": "/bin/x86_64-linux-gnu-g++-9 -Dsylar_EXPORTS -D__FILE__=\\\"sylar/fiber.cc\\\" -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/fiber.cc.o -c /home/cheng/Code/sylar/sylar/fiber.cc",
   "file": "/home/cheng/Code/sylar/sylar/fiber.cc"
 },
 {
   "directory": "/home/cheng/Code/sylar/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9  -D__FILE__=\\\"tests/test_fiber.cc\\\" -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o -c /home/cheng/Code/sylar/tests/test_fiber.cc",
+  "command": "/bin/x86_64-linux-gnu-g++-9 -Dsylar_EXPORTS -D__FILE__=\\\"sylar/scheduler.cc\\\" -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/scheduler.cc.o -c /home/cheng/Code/sylar/sylar/scheduler.cc",
+  "file": "/home/cheng/Code/sylar/sylar/scheduler.cc"
+},
+{
+  "directory": "/home/cheng/Code/sylar/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9 -Dsylar_EXPORTS -D__FILE__=\\\"sylar/mutex.cc\\\" -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Wno-unused-function -Wno-builtin-macro-redefined -g -fPIC -o CMakeFiles/sylar.dir/sylar/mutex.cc.o -c /home/cheng/Code/sylar/sylar/mutex.cc",
+  "file": "/home/cheng/Code/sylar/sylar/mutex.cc"
+},
+{
+  "directory": "/home/cheng/Code/sylar/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -D__FILE__=\\\"tests/test_scheduler.cc\\\" -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_scheduler.dir/tests/test_scheduler.cc.o -c /home/cheng/Code/sylar/tests/test_scheduler.cc",
+  "file": "/home/cheng/Code/sylar/tests/test_scheduler.cc"
+},
+{
+  "directory": "/home/cheng/Code/sylar/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -D__FILE__=\\\"tests/test_fiber.cc\\\" -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o -c /home/cheng/Code/sylar/tests/test_fiber.cc",
   "file": "/home/cheng/Code/sylar/tests/test_fiber.cc"
 },
 {
   "directory": "/home/cheng/Code/sylar/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9  -D__FILE__=\\\"tests/test_util.cc\\\" -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_util.dir/tests/test_util.cc.o -c /home/cheng/Code/sylar/tests/test_util.cc",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -D__FILE__=\\\"tests/test_util.cc\\\" -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_util.dir/tests/test_util.cc.o -c /home/cheng/Code/sylar/tests/test_util.cc",
   "file": "/home/cheng/Code/sylar/tests/test_util.cc"
 },
 {
   "directory": "/home/cheng/Code/sylar/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9  -D__FILE__=\\\"tests/test_config.cc\\\" -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_config.dir/tests/test_config.cc.o -c /home/cheng/Code/sylar/tests/test_config.cc",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -D__FILE__=\\\"tests/test_config.cc\\\" -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_config.dir/tests/test_config.cc.o -c /home/cheng/Code/sylar/tests/test_config.cc",
   "file": "/home/cheng/Code/sylar/tests/test_config.cc"
 },
 {
   "directory": "/home/cheng/Code/sylar/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9  -D__FILE__=\\\"tests/test_thread.cc\\\" -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_thread.dir/tests/test_thread.cc.o -c /home/cheng/Code/sylar/tests/test_thread.cc",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -D__FILE__=\\\"tests/test_thread.cc\\\" -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test_thread.dir/tests/test_thread.cc.o -c /home/cheng/Code/sylar/tests/test_thread.cc",
   "file": "/home/cheng/Code/sylar/tests/test_thread.cc"
 },
 {
   "directory": "/home/cheng/Code/sylar/build",
-  "command": "/bin/x86_64-linux-gnu-g++-9  -D__FILE__=\\\"tests/test.cc\\\" -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test.dir/tests/test.cc.o -c /home/cheng/Code/sylar/tests/test.cc",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -D__FILE__=\\\"tests/test.cc\\\" -I/home/cheng/Code/sylar/.  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Wno-unused-function -Wno-builtin-macro-redefined -g -o CMakeFiles/test.dir/tests/test.cc.o -c /home/cheng/Code/sylar/tests/test.cc",
   "file": "/home/cheng/Code/sylar/tests/test.cc"
 }
 ]

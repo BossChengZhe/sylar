@@ -227,6 +227,7 @@ CMakeFiles/test.dir/tests/test.cc.o: tests/test.cc \
   /usr/include/semaphore.h \
   /usr/include/x86_64-linux-gnu/bits/semaphore.h \
   /usr/include/c++/9/atomic \
+  sylar/mutex.h \
   sylar/util.h \
   /usr/include/x86_64-linux-gnu/sys/syscall.h \
   /usr/include/x86_64-linux-gnu/asm/unistd.h \
@@ -299,6 +300,8 @@ sylar/singleton.h:
 /usr/include/c++/9/bits/shared_ptr.h:
 
 /usr/include/c++/9/array:
+
+sylar/mutex.h:
 
 /usr/include/c++/9/tuple:
 
